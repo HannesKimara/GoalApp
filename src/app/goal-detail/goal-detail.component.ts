@@ -8,7 +8,7 @@ import { Goal } from '../goal';
 })
 export class GoalDetailComponent implements OnInit {
 
-  @Input() goal: Goal[];
+  @Input() goal: Goal;
   @Output() isComplete = new EventEmitter<boolean>();
 
   goalDelete(complete:boolean){
